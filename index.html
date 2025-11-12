@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>IAG ENGFest Mini-Hack Games</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header class="site-header">
+        <img class="header-logo" src="images/Logo_IAG.svg.png" alt="IAG Logo" height="20"/>
+        <img class="header-logo" src="images/Microsoft_logo_(2012).svg.webp" alt="Microsoft Logo" height="20"/>
+        <h1>IAG ENGFest Nov 25: Mini-Hack Games</h1>
+        <p class="description">Below are all 16 games submitted by the teams. Preview the games and submit your votes at the bottom</p>
+      </header>
+
+      <section id="games" class="games-grid" aria-label="List of games">
+        <!-- Game cards inserted by script.js -->
+      </section>
+
+      <section class="voting" aria-label="Voting form">
+        <h2>Submit your votes</h2>
+        <form id="voteForm">
+          <div class="form-row">
+            <label for="yourTeam">Your Team</label>
+            <select id="yourTeam" required>
+              <option value="">-- select your team --</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label for="firstVote">First Vote</label>
+            <select id="firstVote" required>
+              <option value="">-- select first vote --</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label for="secondVote">Second Vote</label>
+            <select id="secondVote" required>
+              <option value="">-- select second vote --</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label for="thirdVote">Third Vote</label>
+            <select id="thirdVote" required>
+              <option value="">-- select third vote --</option>
+            </select>
+          </div>
+
+          <div class="form-row actions">
+            <button type="submit" id="submitBtn">Send Votes</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
