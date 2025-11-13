@@ -9,8 +9,8 @@
   <body>
     <main class="container">
       <header class="site-header">
-        <img class="header-logo" src="images/Logo_IAG.svg.png" alt="IAG Logo" height="20"/>
-        <img class="header-logo" src="images/Microsoft_logo_(2012).svg.webp" alt="Microsoft Logo" height="20"/>
+        <img class="header-logo" src="assets/images/Logo_IAG.svg.png" alt="IAG Logo" height="20"/>
+        <img class="header-logo" src="assets/images/Microsoft_logo_(2012).svg.webp" alt="Microsoft Logo" height="20"/>
         <h1>IAG ENGFest Nov 25: Mini-Hack Games</h1>
         <p class="description">Below are all 16 games submitted by the teams. Preview the games and submit your votes at the bottom</p>
       </header>
@@ -21,14 +21,15 @@
 
       <section class="voting" aria-label="Voting form">
         <h2>Submit your votes</h2>
+        <p>Please only submit the form once. All members should submit their own form.<br><br>First select your own team below.</p>
         <form id="voteForm">
-          <div class="form-row">
+          <div class="form-row your-team-row">
             <label for="yourTeam">Your Team</label>
             <select id="yourTeam" required>
               <option value="">-- select your team --</option>
             </select>
           </div>
-
+          <p>Now cast your 3 votes for your favourite games by other teams.</p>
           <div class="form-row">
             <label for="firstVote">First Vote</label>
             <select id="firstVote" required>
@@ -51,9 +52,27 @@
           </div>
 
           <div class="form-row actions">
-            <button type="submit" id="submitBtn">Send Votes</button>
+            <button type="submit" id="submitBtn">Cast Votes</button>
           </div>
         </form>
+      </section>
+
+      <section class="results" aria-label="Voting Results">
+        <h2>Voting Results</h2>
+        <!-- <p class="small">Click the "Votes" header to sort by number of votes.</p> -->
+        <div class="results-table-wrapper">
+          <table id="resultsTable">
+            <thead>
+              <tr>
+                <th>Team</th>
+                <th id="votesHeader" class="sortable">Votes ▾</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- rows populated by script.js -->
+            </tbody>
+          </table>
+        </div>
       </section>
     </main>
 

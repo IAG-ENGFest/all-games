@@ -1,22 +1,22 @@
 // Define the 16 games explicitly below. Edit the title, team, url and image fields
 // for each entry. Keep exactly 16 objects in this array.
 const games = [
-  { id: 'game1',  title: 'Mini-Game 1',  team: 'Team 1',  url: 'https://example.com/game1',  image: 'https://picsum.photos/seed/game1/800/600' },
-  { id: 'game2',  title: 'Mini-Game 2',  team: 'Team 2',  url: 'https://example.com/game2',  image: 'https://picsum.photos/seed/game2/800/600' },
-  { id: 'game3',  title: 'Mini-Game 3',  team: 'Team 3',  url: 'https://example.com/game3',  image: 'https://picsum.photos/seed/game3/800/600' },
-  { id: 'game4',  title: 'Mini-Game 4',  team: 'Team 4',  url: 'https://example.com/game4',  image: 'https://picsum.photos/seed/game4/800/600' },
-  { id: 'game5',  title: 'Mini-Game 5',  team: 'Team 5',  url: 'https://example.com/game5',  image: 'https://picsum.photos/seed/game5/800/600' },
-  { id: 'game6',  title: 'Mini-Game 6',  team: 'Team 6',  url: 'https://example.com/game6',  image: 'https://picsum.photos/seed/game6/800/600' },
-  { id: 'game7',  title: 'Mini-Game 7',  team: 'Team 7',  url: 'https://example.com/game7',  image: 'https://picsum.photos/seed/game7/800/600' },
-  { id: 'game8',  title: 'Mini-Game 8!',  team: 'Team 8',  url: 'https://example.com/game8',  image: 'https://picsum.photos/seed/game8/800/600' },
-  { id: 'game9',  title: 'Mini-Game 9',  team: 'Team 9',  url: 'https://example.com/game9',  image: 'https://picsum.photos/seed/game9/800/600' },
-  { id: 'game10', title: 'Mini-Game 10', team: 'Team 10', url: 'https://example.com/game10', image: 'https://picsum.photos/seed/game10/800/600' },
-  { id: 'game11', title: 'Mini-Game 11', team: 'Team 11', url: 'https://example.com/game11', image: 'https://picsum.photos/seed/game11/800/600' },
-  { id: 'game12', title: 'Mini-Game 12', team: 'Team 12', url: 'https://example.com/game12', image: 'https://picsum.photos/seed/game12/800/600' },
-  { id: 'game13', title: 'Mini-Game 13', team: 'Team 13', url: 'https://example.com/game13', image: 'https://picsum.photos/seed/game13/800/600' },
-  { id: 'game14', title: 'Mini-Game 14', team: 'Team 14', url: 'https://example.com/game14', image: 'https://picsum.photos/seed/game14/800/600' },
-  { id: 'game15', title: 'Mini-Game 15', team: 'Team 15', url: 'https://example.com/game15', image: 'https://picsum.photos/seed/game15/800/600' },
-  { id: 'game16', title: 'Mini-Game 16', team: 'Team 16', url: 'https://example.com/game16', image: 'https://picsum.photos/seed/game16/800/600' }
+  { id: 'game1',  title: 'Game 1',  team: 'Team 1',  url: 'https://example.com/game1',  image: 'https://picsum.photos/seed/game1/800/600' },
+  { id: 'game2',  title: 'Game 2',  team: 'Team 2',  url: 'https://example.com/game2',  image: 'https://picsum.photos/seed/game2/800/600' },
+  { id: 'game3',  title: 'Game 3',  team: 'Team 3',  url: 'https://example.com/game3',  image: 'https://picsum.photos/seed/game3/800/600' },
+  { id: 'game4',  title: 'Game 4',  team: 'Team 4',  url: 'https://example.com/game4',  image: 'https://picsum.photos/seed/game4/800/600' },
+  { id: 'game5',  title: 'Game 5',  team: 'Team 5',  url: 'https://example.com/game5',  image: 'https://picsum.photos/seed/game5/800/600' },
+  { id: 'game6',  title: 'Game 6',  team: 'Team 6',  url: 'https://example.com/game6',  image: 'https://picsum.photos/seed/game6/800/600' },
+  { id: 'game7',  title: 'Game 7',  team: 'Team 7',  url: 'https://example.com/game7',  image: 'https://picsum.photos/seed/game7/800/600' },
+  { id: 'game8',  title: 'Game 8',  team: 'Team 8',  url: 'https://example.com/game8',  image: 'https://picsum.photos/seed/game8/800/600' },
+  { id: 'game9',  title: 'Game 9',  team: 'Team 9',  url: 'https://example.com/game9',  image: 'https://picsum.photos/seed/game9/800/600' },
+  { id: 'game10', title: 'Game 10', team: 'Team 10', url: 'https://example.com/game10', image: 'https://picsum.photos/seed/game10/800/600' },
+  { id: 'game11', title: 'Game 11', team: 'Team 11', url: 'https://example.com/game11', image: 'https://picsum.photos/seed/game11/800/600' },
+  { id: 'game12', title: 'Game 12', team: 'Team 12', url: 'https://example.com/game12', image: 'https://picsum.photos/seed/game12/800/600' },
+  { id: 'game13', title: 'Game 13', team: 'Team 13', url: 'https://example.com/game13', image: 'https://picsum.photos/seed/game13/800/600' },
+  { id: 'game14', title: 'Game 14', team: 'Team 14', url: 'https://example.com/game14', image: 'https://picsum.photos/seed/game14/800/600' },
+  { id: 'game15', title: 'Game 15', team: 'Team 15', url: 'https://example.com/game15', image: 'https://picsum.photos/seed/game15/800/600' },
+  { id: 'game16', title: 'Game 16', team: 'Team 16', url: 'https://example.com/game16', image: 'https://picsum.photos/seed/game16/800/600' }
 ];
 
 const gamesContainer = document.getElementById('games');
@@ -164,7 +164,7 @@ function initForm(){
     }
 
     const to = 'andrewrubio@microsoft.com';
-    const subject = encodeURIComponent('IAG ENGFest Mini-Hack Votes');
+    const subject = yourTeam.value + ': ' + encodeURIComponent('IAG ENGFest Mini-Hack Votes');
     const bodyLines = [
       `Your Team: ${yt}`,
       `First Vote: ${v1}`,
@@ -184,3 +184,91 @@ function initForm(){
 // Initialize page
 renderGames();
 initForm();
+
+// -- Voting results table -----------------------------------------------
+const resultsTableBody = document.querySelector('#resultsTable tbody');
+const votesHeader = document.getElementById('votesHeader');
+
+// Editable votes data: provide one number per game (index corresponds to games[])
+// Edit only the numbers in this array to update vote counts.
+const votesData = [
+  0, 0, 0, 0,
+  0, 0, 0, 0,
+  0, 0, 0, 0,
+  0, 0, 0, 0
+];
+
+// Build the `results` array from games and votesData so team names are authoritative
+let results = games.map((g, i) => ({ team: g.team, votes: (votesData[i] != null ? Number(votesData[i]) : 0) }));
+
+if(votesData.length !== games.length){
+  console.warn(`votesData length (${votesData.length}) does not match games length (${games.length}). Missing entries will be treated as 0.`);
+}
+
+let sortDesc = true; // default sort by descending votes
+
+function getTopTwoFromResults(){
+  const copy = results.slice().sort((a,b)=>b.votes - a.votes);
+  return [copy[0] || null, copy[1] || null];
+}
+
+function renderResults(){
+  if(!resultsTableBody) return;
+  // ensure results reflect current games and votesData (in case games changed)
+  results = games.map((g, i) => ({ team: g.team, votes: (votesData[i] != null ? Number(votesData[i]) : 0) }));
+
+  // determine top two by votes (highest)
+  const [top1, top2] = getTopTwoFromResults();
+
+  // sort according to current sort order for display
+  const display = results.slice().sort((a,b)=> sortDesc ? b.votes - a.votes : a.votes - b.votes);
+
+  // clear
+  resultsTableBody.innerHTML = '';
+  display.forEach(row => {
+    const tr = document.createElement('tr');
+    const tdTeam = document.createElement('td');
+    const tdVotes = document.createElement('td');
+
+    // badge for top1/top2
+    if(top1 && row.team === top1.team){
+      const span = document.createElement('span');
+      span.className = 'trophy';
+      span.textContent = '🏆';
+      tdTeam.appendChild(span);
+      tdTeam.classList.add('top1');
+    } else if(top2 && row.team === top2.team){
+      const span = document.createElement('span');
+      span.className = 'medal';
+      span.textContent = '🥈';
+      tdTeam.appendChild(span);
+      tdTeam.classList.add('top2');
+    }
+
+    const teamText = document.createTextNode(row.team);
+    tdTeam.appendChild(teamText);
+    tdVotes.textContent = String(row.votes);
+
+    tr.appendChild(tdTeam);
+    tr.appendChild(tdVotes);
+    resultsTableBody.appendChild(tr);
+  });
+}
+
+function sortResults(){
+  renderResults();
+  // update header arrow
+  if(votesHeader){
+    votesHeader.textContent = `Votes ${sortDesc ? '▾' : '▴'}`;
+  }
+}
+
+if(votesHeader){
+  votesHeader.addEventListener('click', ()=>{
+    sortDesc = !sortDesc;
+    sortResults();
+  });
+}
+
+// initial render
+sortResults();
