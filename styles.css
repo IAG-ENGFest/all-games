@@ -68,7 +68,7 @@ select,button{padding:10px;border-radius:8px;border:1px solid #dbeafe;background
 button{cursor:pointer;background:var(--accent);border:none;color:white}
 .actions{display:flex;justify-content:flex-end;margin-top:20px;}
 
-.results{margin-top:50px}
+.results{margin:50px 0}
 .results .small{color:var(--muted);margin:6px 0 10px 0}
 .results-table-wrapper{overflow:auto;background:transparent;border-radius:10px}
 #resultsTable{width:100%;border-collapse:collapse;background:var(--card);box-shadow:0 2px 6px rgba(16,24,40,0.04)}

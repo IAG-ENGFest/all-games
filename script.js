@@ -1,5 +1,5 @@
-// Define the 16 games explicitly below. Edit the title, team, url and image fields
-// for each entry. Keep exactly 16 objects in this array.
+// Define the 14 games explicitly below. Edit the title, team, url and image fields
+// for each entry. Keep exactly 14 objects in this array.
 const games = [
   { id: 'game1',  title: 'Game 1',  team: 'Team 1',  url: 'https://example.com/game1',  image: 'https://picsum.photos/seed/game1/800/600' },
   { id: 'game2',  title: 'Game 2',  team: 'Team 2',  url: 'https://example.com/game2',  image: 'https://picsum.photos/seed/game2/800/600' },
@@ -14,9 +14,7 @@ const games = [
   { id: 'game11', title: 'Game 11', team: 'Team 11', url: 'https://example.com/game11', image: 'https://picsum.photos/seed/game11/800/600' },
   { id: 'game12', title: 'Game 12', team: 'Team 12', url: 'https://example.com/game12', image: 'https://picsum.photos/seed/game12/800/600' },
   { id: 'game13', title: 'Game 13', team: 'Team 13', url: 'https://example.com/game13', image: 'https://picsum.photos/seed/game13/800/600' },
-  { id: 'game14', title: 'Game 14', team: 'Team 14', url: 'https://example.com/game14', image: 'https://picsum.photos/seed/game14/800/600' },
-  { id: 'game15', title: 'Game 15', team: 'Team 15', url: 'https://example.com/game15', image: 'https://picsum.photos/seed/game15/800/600' },
-  { id: 'game16', title: 'Game 16', team: 'Team 16', url: 'https://example.com/game16', image: 'https://picsum.photos/seed/game16/800/600' }
+  { id: 'game14', title: 'Game 14', team: 'Team 14', url: 'https://example.com/game14', image: 'https://picsum.photos/seed/game14/800/600' }
 ];
 
 const gamesContainer = document.getElementById('games');
@@ -195,7 +193,7 @@ const votesData = [
   0, 0, 0, 0,
   0, 0, 0, 0,
   0, 0, 0, 0,
-  0, 0, 0, 0
+  0, 0
 ];
 
 // Build the `results` array from games and votesData so team names are authoritative
