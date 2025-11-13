@@ -10,12 +10,12 @@ html,body,#app{height:100%}
 @font-face {
   font-family: 'Gotham';
   font-weight: normal;
-  src: url('../assets/fonts/Gotham-Medium.otf') format('opentype');
+  src: url('assets/fonts/Gotham-Medium.otf') format('opentype');
 }
 @font-face {
   font-family: 'Gotham';
   font-weight: bold;
-  src: url('../assets/fonts/Gotham-Bold.otf') format('opentype');
+  src: url('assets/fonts/Gotham-Bold.otf') format('opentype');
 }
 h2 {font-size: 36px;}
 body{
