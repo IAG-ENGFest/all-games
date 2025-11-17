@@ -1,20 +1,20 @@
 // Define the 14 games explicitly below. Edit the title, team, url and image fields
 // for each entry. Keep exactly 14 objects in this array.
 const games = [
-  { id: 'game1',  title: 'Game 1',  team: 'Team 1',  url: 'https://example.com/game1',  image: 'https://picsum.photos/seed/game1/800/600' },
-  { id: 'game2',  title: 'Game 2',  team: 'Team 2',  url: 'https://example.com/game2',  image: 'https://picsum.photos/seed/game2/800/600' },
-  { id: 'game3',  title: 'Game 3',  team: 'Team 3',  url: 'https://example.com/game3',  image: 'https://picsum.photos/seed/game3/800/600' },
-  { id: 'game4',  title: 'Game 4',  team: 'Team 4',  url: 'https://example.com/game4',  image: 'https://picsum.photos/seed/game4/800/600' },
-  { id: 'game5',  title: 'Game 5',  team: 'Team 5',  url: 'https://example.com/game5',  image: 'https://picsum.photos/seed/game5/800/600' },
-  { id: 'game6',  title: 'Game 6',  team: 'Team 6',  url: 'https://example.com/game6',  image: 'https://picsum.photos/seed/game6/800/600' },
-  { id: 'game7',  title: 'Game 7',  team: 'Team 7',  url: 'https://example.com/game7',  image: 'https://picsum.photos/seed/game7/800/600' },
-  { id: 'game8',  title: 'Game 8',  team: 'Team 8',  url: 'https://example.com/game8',  image: 'https://picsum.photos/seed/game8/800/600' },
-  { id: 'game9',  title: 'Game 9',  team: 'Team 9',  url: 'https://example.com/game9',  image: 'https://picsum.photos/seed/game9/800/600' },
-  { id: 'game10', title: 'Game 10', team: 'Team 10', url: 'https://example.com/game10', image: 'https://picsum.photos/seed/game10/800/600' },
-  { id: 'game11', title: 'Game 11', team: 'Team 11', url: 'https://example.com/game11', image: 'https://picsum.photos/seed/game11/800/600' },
-  { id: 'game12', title: 'Game 12', team: 'Team 12', url: 'https://example.com/game12', image: 'https://picsum.photos/seed/game12/800/600' },
-  { id: 'game13', title: 'Game 13', team: 'Team 13', url: 'https://example.com/game13', image: 'https://picsum.photos/seed/game13/800/600' },
-  { id: 'game14', title: 'Game 14', team: 'Team 14', url: 'https://example.com/game14', image: 'https://picsum.photos/seed/game14/800/600' }
+  { id: 'game1',  title: 'Game 1',  team: 'Team 1',  url: 'https://iag-engfest.github.io/team-1/',  image: 'https://iag-engfest.github.io/team-1/screenshot.jpg' },
+  { id: 'game2',  title: 'Game 2',  team: 'Team 1',  url: 'https://iag-engfest.github.io/team-2/',  image: 'https://iag-engfest.github.io/team-2/screenshot.jpg' },
+  { id: 'game3',  title: 'Game 3',  team: 'Team 1',  url: 'https://iag-engfest.github.io/team-3/',  image: 'https://iag-engfest.github.io/team-3/screenshot.jpg' },
+  { id: 'game4',  title: 'Game 4',  team: 'Team 1',  url: 'https://iag-engfest.github.io/team-4/',  image: 'https://iag-engfest.github.io/team-4/screenshot.jpg' },
+  { id: 'game5',  title: 'Game 5',  team: 'Team 1',  url: 'https://iag-engfest.github.io/team-5/',  image: 'https://iag-engfest.github.io/team-5/screenshot.jpg' },
+  { id: 'game6',  title: 'Game 6',  team: 'Team 1',  url: 'https://iag-engfest.github.io/team-6/',  image: 'https://iag-engfest.github.io/team-6/screenshot.jpg' },
+  { id: 'game7',  title: 'Game 7',  team: 'Team 1',  url: 'https://iag-engfest.github.io/team-7/',  image: 'https://iag-engfest.github.io/team-7/screenshot.jpg' },
+  { id: 'game8',  title: 'Game 8',  team: 'Team 1',  url: 'https://iag-engfest.github.io/team-8/',  image: 'https://iag-engfest.github.io/team-8/screenshot.jpg' },
+  { id: 'game9',  title: 'Game 9',  team: 'Team 1',  url: 'https://iag-engfest.github.io/team-9/',  image: 'https://iag-engfest.github.io/team-9/screenshot.jpg' },
+  { id: 'game10',  title: 'Game 10',  team: 'Team 1',  url: 'https://iag-engfest.github.io/team-10/',  image: 'https://iag-engfest.github.io/team-10/screenshot.jpg' },
+  { id: 'game11',  title: 'Game 11',  team: 'Team 1',  url: 'https://iag-engfest.github.io/team-11/',  image: 'https://iag-engfest.github.io/team-11/screenshot.jpg' },
+  { id: 'game12',  title: 'Game 12',  team: 'Team 1',  url: 'https://iag-engfest.github.io/team-12/',  image: 'https://iag-engfest.github.io/team-12/screenshot.jpg' },
+  { id: 'game13',  title: 'Game 13',  team: 'Team 1',  url: 'https://iag-engfest.github.io/team-13/',  image: 'https://iag-engfest.github.io/team-13/screenshot.jpg' },
+  { id: 'game14',  title: 'Game 14',  team: 'Team 1',  url: 'https://iag-engfest.github.io/team-14/',  image: 'https://iag-engfest.github.io/team-14/screenshot.jpg' }
 ];
 
 const gamesContainer = document.getElementById('games');
