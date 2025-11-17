@@ -96,7 +96,7 @@ function populateSelect(selectEl, options, placeholder, preserve = true){
 }
 
 function teamList(){
-  return games.map(g=>g.team);
+  return games.map(g=>g.title);
 }
 
 function updateVoteOptions(){
@@ -115,7 +115,7 @@ function updateVoteOptions(){
 }
 
 function initForm(){
-  populateSelect(yourTeam, teamList(), '-- select your team --');
+  populateSelect(yourTeam, teamList(), '-- select your team\'s game --');
   populateSelect(firstVote, teamList(), '-- select first vote --');
   populateSelect(secondVote, teamList(), '-- select second vote --');
   populateSelect(thirdVote, teamList(), '-- select third vote --');
@@ -161,13 +161,15 @@ function initForm(){
       return;
     }
 
-    const to = 'andrewrubio@microsoft.com';
+    const to = 'andrewrubio@microsoft.com; Mark.Harrison@microsoft.com';
     const subject = yourTeam.value + ': ' + encodeURIComponent('IAG ENGFest Mini-Hack Votes');
     const bodyLines = [
       `Your Team: ${yt}`,
-      `First Vote: ${v1}`,
-      `Second Vote: ${v2}`,
-      `Third Vote: ${v3}`,
+      ``,
+      `Your Votes:`,
+      `- ${v1}`,
+      `- ${v2}`,
+      `- ${v3}`,
       '',
       'Submitted from IAG ENGFest Mini-Hack Games site.'
     ];
@@ -213,7 +215,7 @@ function getTopTwoFromResults(){
 function renderResults(){
   if(!resultsTableBody) return;
   // ensure results reflect current games and votesData (in case games changed)
-  results = games.map((g, i) => ({ team: g.team, votes: (votesData[i] != null ? Number(votesData[i]) : 0) }));
+  results = games.map((g, i) => ({ team: g.team, title: g.title, votes: (votesData[i] != null ? Number(votesData[i]) : 0) }));
 
   // determine top two by votes (highest)
   const [top1, top2] = getTopTwoFromResults();
@@ -243,7 +245,7 @@ function renderResults(){
       tdTeam.classList.add('top2');
     }
 
-    const teamText = document.createTextNode(row.team);
+    const teamText = document.createTextNode(row.team + ' - ' + row.title);
     tdTeam.appendChild(teamText);
     tdVotes.textContent = String(row.votes);
 
