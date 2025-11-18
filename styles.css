@@ -60,6 +60,7 @@ body{
 .team{color:var(--muted);font-size:16px;margin-top:10px;padding-bottom: 10px;}
 .play-link{margin-top:8px;color:var(--accent);font-weight:600}
 .voting{margin-top:50px;padding:18px;background:var(--surface);border-radius:10px;border:1px solid #e6edf6}
+.voting-description{color:red;}
 .voting h2{margin:0 0 20px 0}
 .form-row{display:flex;flex-direction:column;margin-bottom:12px}
 .form-row.your-team-row{margin-bottom:20px;}
@@ -68,7 +69,7 @@ select,button{padding:10px;border-radius:8px;border:1px solid #dbeafe;background
 button{cursor:pointer;background:var(--accent);border:none;color:white}
 .actions{display:flex;justify-content:flex-end;margin-top:20px;}
 
-.results{margin:50px 0}
+.results{margin:50px 0; display:none;}
 .results .small{color:var(--muted);margin:6px 0 10px 0}
 .results-table-wrapper{overflow:auto;background:transparent;border-radius:10px}
 #resultsTable{width:100%;border-collapse:collapse;background:var(--card);box-shadow:0 2px 6px rgba(16,24,40,0.04)}
