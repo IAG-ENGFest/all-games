@@ -191,9 +191,9 @@ const votesHeader = document.getElementById('votesHeader');
 // Editable votes data: provide one number per game (index corresponds to games[])
 // Edit only the numbers in this array to update vote counts.
 const votesData = [
-  0, 0, 0, 0,
-  0, 0, 0, 0,
-  0, 0, 0, 0,
+  3, 1, 5, 0,
+  2, 4, 3, 0,
+  5, 1, 5, 6,
   0
 ];
 
