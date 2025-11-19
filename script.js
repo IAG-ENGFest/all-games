@@ -1,5 +1,5 @@
-// Define the 14 games explicitly below. Edit the title, team, url and image fields
-// for each entry. Keep exactly 14 objects in this array.
+// Define the 13 games explicitly below. Edit the title, team, url and image fields
+// for each entry. Keep exactly 13 objects in this array.
 const games = [
   { id: 'game1',  title: 'Game 1',  team: 'Team 1',  url: 'https://iag-engfest.github.io/team-1/',  image: 'https://iag-engfest.github.io/team-1/screenshot.jpg' },
   { id: 'game2',  title: 'Game 2',  team: 'Team 2',  url: 'https://iag-engfest.github.io/team-2/',  image: 'https://iag-engfest.github.io/team-2/screenshot.jpg' },
@@ -14,7 +14,6 @@ const games = [
   { id: 'game11',  title: 'Game 11',  team: 'Team 11',  url: 'https://iag-engfest.github.io/team-11/',  image: 'https://iag-engfest.github.io/team-11/screenshot.jpg' },
   { id: 'game12',  title: 'Game 12',  team: 'Team 12',  url: 'https://iag-engfest.github.io/team-12/',  image: 'https://iag-engfest.github.io/team-12/screenshot.jpg' },
   { id: 'game13',  title: 'Game 13',  team: 'Team 13',  url: 'https://iag-engfest.github.io/team-13/',  image: 'https://iag-engfest.github.io/team-13/screenshot.jpg' },
-  { id: 'game14',  title: 'Game 14',  team: 'Team 14',  url: 'https://iag-engfest.github.io/team-14/',  image: 'https://iag-engfest.github.io/team-14/screenshot.jpg' }
 ];
 
 const gamesContainer = document.getElementById('games');
@@ -194,8 +193,7 @@ const votesHeader = document.getElementById('votesHeader');
 const votesData = [
   0, 0, 0, 0,
   0, 0, 0, 0,
-  0, 0, 0, 0,
-  0, 0
+  0, 0, 0
 ];
 
 // Build the `results` array from games and votesData so team names are authoritative

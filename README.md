@@ -1,6 +1,6 @@
 # all-games
 
-This folder contains a static frontend that presents the mini-hack games submitted by teams, allows users to vote, and shows voting results.
+This folder contains a static frontend that presents the 13 mini-hack games submitted by teams, allows users to vote, and shows voting results.
 
 Files
 
