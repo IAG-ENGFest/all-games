@@ -1,34 +1,38 @@
 # all-games
 
-This folder contains a simple static frontend that lists 16 games as cards (two per row) and includes a voting form at the bottom.
+This folder contains a static frontend that presents the mini-hack games submitted by teams, allows users to vote, and shows voting results.
 
-Files added:
+Files
 
-- `index.html` — main page containing the cards and form
-- `styles.css` — styling for layout and form
-- `script.js` — supplies 16 placeholder games, renders cards, and wires the vote form so it opens a pre-filled email to `andrewrubio@microsoft.com`
+- `index.html` — main page with game cards, voting form, and results table
+- `styles.css` — styling for layout, cards, form, and results
+- `script.js` — page logic: games list, form population/validation, mailto submission, results rendering and sorting
 
-How it works
+What the site does
 
-- The game list is populated from a `games` array in `script.js`. Each card contains an image, title, team name and links to the game's URL. The whole card is clickable and opens the URL in a new tab.
-- The voting form contains:
-	- "Your Team" — select your team
-	- "First Vote", "Second Vote", "Third Vote" — cascading dropdowns that exclude choices already selected (and exclude "Your Team").
-- On submit, the form creates a `mailto:` link addressed to `andrewrubio@microsoft.com` with the selected values in the email body and opens the user's mail client.
+- Presents each submitted game as a card with image, title and team. Cards open the game's URL in a new tab.
+- Voting form at the bottom:
+	- `Your Team` — choose your team's game (prevents voting for your own team)
+	- `First Vote`, `Second Vote`, `Third Vote` — cascading dropdowns that exclude already-selected choices; users must select three distinct teams
+	- Submitting the form opens the user's mail client with a prefilled email addressed to the configured recipients (uses `mailto:`). This is a static front-end implementation — server-side submission is not included.
+- Voting Results:
+	- A results table shows each team and its vote count.
+	- The `Votes` column is sortable by clicking its header (toggles ascending/descending).
+	- The top-voted team is highlighted with a trophy icon.
 
-To run locally
+Editable data
 
-1. Open `index.html` in your browser (double-click or serve via a static server).
+- `games` in `script.js` — an array of objects with `id`, `title`, `team`, `url`, and `image`. Edit this to list the real games and teams.
+- `votesData` in `script.js` — an array of numbers, one per game (index-aligned with `games`) used to populate the results table. Edit these numbers to reflect vote counts.
 
-Optional: serve via a minimal local server (Python):
+How to run locally
 
 ```bash
 python3 -m http.server 8000
 # then open http://localhost:8000 in your browser
 ```
 
-Notes
+Notes and next steps
 
-- Team names and game URLs are placeholders (Team 1 .. Team 16; https://example.com/gameX). Replace in `script.js` with real data as needed.
-- If you want server-side email delivery (no user mail client), add a small backend or use a service such as EmailJS, Formspree, or an Azure Function to accept POSTs and send emails.
-# all-games
+- Because the site is static, vote submission uses the user's mail client (`mailto:`). If you want to persist votes centrally (no mail client needed), add a small backend (Node/Express, serverless function) or use a hosted form service (Formspree, EmailJS, etc.).
+- If you want votes to be recorded automatically and reflected in the results table, I can add a server endpoint or switch to a client-side storage approach (localStorage) for local testing.

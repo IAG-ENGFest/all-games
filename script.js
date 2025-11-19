@@ -207,9 +207,9 @@ if(votesData.length !== games.length){
 
 let sortDesc = true; // default sort by descending votes
 
-function getTopTwoFromResults(){
+function getTopFromResults(){
   const copy = results.slice().sort((a,b)=>b.votes - a.votes);
-  return [copy[0] || null, copy[1] || null];
+  return copy[0] || null;
 }
 
 function renderResults(){
@@ -217,8 +217,8 @@ function renderResults(){
   // ensure results reflect current games and votesData (in case games changed)
   results = games.map((g, i) => ({ team: g.team, title: g.title, votes: (votesData[i] != null ? Number(votesData[i]) : 0) }));
 
-  // determine top two by votes (highest)
-  const [top1, top2] = getTopTwoFromResults();
+  // determine top team by votes (highest)
+  const top1 = getTopFromResults();
 
   // sort according to current sort order for display
   const display = results.slice().sort((a,b)=> sortDesc ? b.votes - a.votes : a.votes - b.votes);
@@ -230,19 +230,13 @@ function renderResults(){
     const tdTeam = document.createElement('td');
     const tdVotes = document.createElement('td');
 
-    // badge for top1/top2
+    // badge for top team only
     if(top1 && row.team === top1.team){
       const span = document.createElement('span');
       span.className = 'trophy';
       span.textContent = '🏆';
       tdTeam.appendChild(span);
       tdTeam.classList.add('top1');
-    } else if(top2 && row.team === top2.team){
-      const span = document.createElement('span');
-      span.className = 'medal';
-      span.textContent = '🥈';
-      tdTeam.appendChild(span);
-      tdTeam.classList.add('top2');
     }
 
     const teamText = document.createTextNode(row.team + ' - ' + row.title);
