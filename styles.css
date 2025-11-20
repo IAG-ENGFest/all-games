@@ -82,6 +82,7 @@ button{cursor:pointer;background:var(--accent);border:none;color:white}
 .header-logo{
     margin-right: 15px;
 }
+.built-with{font-size:12px;}
 
 @media (max-width:900px){
   .games-grid{grid-template-columns:1fr}
